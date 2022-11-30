@@ -1,0 +1,26 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "A restaurant website made dynamically with JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-mcQueen/restaurant.git"
+  },
+  "keywords": [
+    "Restaurant"
+  ],
+  "author": "Jack McQueen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-mcQueen/restaurant/issues"
+  },
+  "homepage": "https://github.com/j-mcQueen/restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  }
+}
