@@ -4,7 +4,7 @@
         url("./fonts/Inter/static/Inter-Bold.ttf") format("ttf"),
 }
 
-html {
+:root {
     font-family: "Inter";
     background: url(./media/mixed-paints.jpg);
 }
