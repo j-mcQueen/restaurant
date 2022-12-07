@@ -4,6 +4,7 @@ const buildHeader = () => {
     const header = document.createElement("header");
     const nav = document.createElement("nav");
     const links = document.createElement("ul");
+    links.id = "links";
 
     content.appendChild(header);
     header.appendChild(nav);
@@ -14,8 +15,16 @@ const buildHeader = () => {
         d.appendChild(elem);
     };
 
+    const addLogo = (d, val, text) => {
+        let home = document.getElementById("home");
+        home.appendChild(d);
+        d.id = val;
+        d.textContent = text;
+    };
+
     const addListItem = (a, val, text) => {
         let listItem = document.createElement("li");
+        listItem.setAttribute("style", "list-style-type: none;");
         links.appendChild(listItem);
         a.id = val;
         a.textContent = text;
@@ -32,13 +41,15 @@ const buildHeader = () => {
                 anchor.id = "home";
                 continue;
             case 1:
-                appendElems(div, "wrapper", links);
+                addLogo(div, "lo", "LO");
                 addListItem(anchor, "about", "ABOUT");
                 continue;
             case 2:
+                addLogo(div, "go", "GO");
                 addListItem(anchor, "menus", "MENUS");
                 continue;
             case 3:
+                appendElems(div, "wrapper", links);
                 addListItem(anchor, "contact", "CONTACT");
                 break;
         };
