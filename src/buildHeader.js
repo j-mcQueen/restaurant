@@ -1,4 +1,4 @@
-const create = () => {
+const buildHeader = () => {
     // -- build uniques
     const content = document.getElementById("content");
     const header = document.createElement("header");
@@ -45,4 +45,4 @@ const create = () => {
     };
 };
 
-export { create };
+export { buildHeader, };
