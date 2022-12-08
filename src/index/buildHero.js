@@ -1,0 +1,5 @@
+const buildHero = () => {
+
+};
+
+export { buildHero };
