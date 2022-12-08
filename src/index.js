@@ -1,5 +1,6 @@
 import "./style.css";
-import Img from "./media/mixed-paints.jpg";
 import { buildHeader } from "./buildHeader";
+import { buildMain } from "./index/buildMain";
 
 buildHeader();
+buildMain();
