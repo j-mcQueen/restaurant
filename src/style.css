@@ -7,12 +7,14 @@
 
 :root {
     font-family: "Inter";
-    background: url(./media/mixed-paints.jpg);
+    background: url(./media/GLOBAL_CUISINE.jpg);
+    background-size: cover;
     --black: #2B2B2B;
-    --blue: #D4EBF9;
+    --white: white;
+    --blue: #364C62;
     --yellow: #FEF9CE;
     --strongYellow: #fff396;
     --purple: #CEA8E6;
     --green: #94DFC0;
-    --red: #F0ADA3;
+    --red: #CD7860;
 }
