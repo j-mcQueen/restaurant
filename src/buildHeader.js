@@ -21,7 +21,7 @@ const buildHeader = () => {
         d.id = val;
         d.textContent = text;
         d.setAttribute("style", `font-size: 28px; font-weight: 700; letter-spacing: -1.25px;
-                                 margin: -1.5px; color: var(--blue); transform: rotate(${num});`);
+                                 margin: -1.5px; color: var(--white); transform: rotate(${num});`);
     };
 
     const addListItem = (a, val, text) => {
@@ -38,7 +38,7 @@ const buildHeader = () => {
     for (let i = 0; i < 4; i++) {
         let div = document.createElement("div");
         let anchor = document.createElement("a");
-        anchor.setAttribute("style", "cursor: pointer; color: var(--blue);");
+        anchor.setAttribute("style", "cursor: pointer; color: var(--white);");
 
         switch (i) {
             case 0:
