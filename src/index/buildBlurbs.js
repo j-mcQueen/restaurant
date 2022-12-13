@@ -1,6 +1,7 @@
+import { buildBtns } from "../buildBtns";
 const buildBlurbs = () => {
     const blurbs = document.getElementById("blurbs");
-    const createElems = (cntr, sub, blrb, cta) => {
+    const createElems = (cntr, sub, blrb, cta, color) => {
         let div = document.createElement("div");
         let subtitle = document.createElement("h3");
         let para = document.createElement("p");
