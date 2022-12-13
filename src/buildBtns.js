@@ -2,7 +2,7 @@ const buildBtns = (appendTo, text) => {
     const btn = document.createElement("button");
     btn.textContent = text;
     btn.setAttribute("style", `font-family: "Inter"; font-size: 20px; font-style: italic;
-                                letter-spacing: -1.25px; margin-top: 5px; padding: 15px;
+                                letter-spacing: -1.25px; margin-top: 5px; padding: 15px 25px;
                                 background-color: var(--blue); border: 1px solid var(--black); color: var(--white);
                                 border-radius: 10px; box-shadow: 0 0 3px 1px var(--black); cursor: pointer;`);
     btn.onmouseenter = () => {
