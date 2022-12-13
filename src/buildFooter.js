@@ -1,0 +1,5 @@
+const buildFooter = () => {
+
+};
+
+export { buildFooter };
