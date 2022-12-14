@@ -9,11 +9,8 @@
     font-family: "Inter";
     background: url(./media/GLOBAL_CUISINE.jpg);
     background-size: cover;
-    --black: #2B2B2B;
-    --white: white;
-    --blue: #364C62;
-    --yellow: #FEF9CE;
-    --green: #A1B069;
-    --red: #CD7860;
-    --pink: #C58B93;
+    --black: #1E1E1E;
+    --white: #FFFFFF;
+    --green: #C8D29E;
+    --red: #C58B93;
 }
