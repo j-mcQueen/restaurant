@@ -3,23 +3,17 @@ const buildHeader = () => {
     const content = document.getElementById("content");
     const header = document.createElement("header");
     const nav = document.createElement("nav");
+    const para = document.createElement("p");
     const links = document.createElement("ul");
     links.id = "links";
 
-    content.appendChild(header);
     header.appendChild(nav);
+    content.appendChild(header);
 
     const appendElems = (d, val, elem) => {
         nav.appendChild(d);
         d.id = val;
         d.appendChild(elem);
-    };
-
-    const addLogo = (d, val, text, num) => {
-        let home = document.getElementById("home");
-        home.appendChild(d);
-        d.id = val;
-        d.textContent = text;
     };
 
     const addListItem = (a, val, text) => {
@@ -30,7 +24,7 @@ const buildHeader = () => {
         listItem.appendChild(a);
     };
     // create divs + anchors + list items
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
         let div = document.createElement("div");
         let anchor = document.createElement("a");
 
@@ -40,19 +34,24 @@ const buildHeader = () => {
                 anchor.id = "home";
                 continue;
             case 1:
-                addLogo(div, "lo", "LO", "-45deg");
-                addListItem(anchor, "about", "ABOUT");
+                addListItem(anchor, "about", "about");
                 continue;
             case 2:
-                addLogo(div, "go", "GO", "45deg");
-                addListItem(anchor, "menus", "MENUS");
+                appendElems(div, "wrapper", links);
+                addListItem(anchor, "menus", "menus");
                 continue;
             case 3:
-                appendElems(div, "wrapper", links);
-                addListItem(anchor, "contact", "CONTACT");
+                addListItem(anchor, "contact", "contact");
+                continue;
+            case 4:
+                addListItem(anchor, "book", "book");
                 break;
         };
     };
+
+    let home = document.getElementById("home");
+    para.textContent = "s w + r d";
+    home.appendChild(para);
 };
 
 export { buildHeader, };
