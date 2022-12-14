@@ -1,16 +1,82 @@
 @font-face {
     font-family: "Inter", sans-serif;
+    font-family: "Lateef", serif;
     src: url("./fonts/Inter/static/Inter-Regular.ttf") format("ttf"),
-        url("./fonts/Inter/static/Inter-Bold.ttf") format("ttf"),
-        url("./fonts/Inter/static/Inter-SemiBold.ttf") format("ttf");
+        url("./fonts/Lateef/Lateef-Regular.ttf") format("ttf");
 }
 
 :root {
-    font-family: "Inter";
-    background: url(./media/GLOBAL_CUISINE.jpg);
-    background-size: cover;
+    font-family: "Inter", sans-serif;
     --black: #1E1E1E;
     --white: #FFFFFF;
     --green: #C8D29E;
     --red: #C58B93;
+    background-color: var(--black);
+}
+
+/* -- HEADER -- */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: var(--white);
+    transition: 0.3s ease;
+}
+
+a:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#logo {
+    font-family: "Lateef", serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 75%;
+}
+
+#logo p {
+    margin: 0;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#links {
+    display: flex;
+    justify-content: space-evenly;
+    letter-spacing: -1.25px;
+    width: 75%;
+}
+
+#links a {
+    font-size: 18px;
+    border: 1px solid var(--white);
+    padding: 8px 20px;
+}
+
+#links a:hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+#links #book:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+#book {
+    color: var(--black);
+    background-color: var(--white);
 }
