@@ -52,7 +52,7 @@ a:hover {
 #links {
     display: flex;
     justify-content: space-evenly;
-    letter-spacing: -1.25px;
+    letter-spacing: -1.75px;
     width: 75%;
 }
 
