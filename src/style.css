@@ -107,10 +107,19 @@ main {
 
 /* -- TITLE -- */
 
-#heading {
+#first {
     font-family: "Lateef", serif;
     font-weight: 400;
     font-size: 140px;
     color: var(--white);
+    margin: 0;
+}
+
+#second {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size:  22px;
+    color: var(--white);
+    letter-spacing: -2px;
     margin: 0;
 }
