@@ -1,24 +1,39 @@
+import githubCat from "../../../../logos/github/github-mark/github-mark-white.png";
+import instagram from "../../../../logos/instagram/instagram.svg";
+
 const buildMain = () => {
     const content = document.getElementById("content");
     const main = document.createElement("main");
     content.appendChild(main);
 
-    const addSection = (val, elem) => {
+    const addLogo = (elem, social, identifier) => {
+        const logo = new Image();
+        logo.src = social;
+        logo.id = identifier;
+        elem.appendChild(logo);
+    }
+
+    const addBlock = (val, elem) => {
         elem.id = val;
         main.appendChild(elem);
     };
 
-    for (let i = 0; i < 3; i++) {
-        let section = document.createElement("section");
+    for (let i = 0; i < 4; i++) {
+        let div = document.createElement("div");
         switch (i) {
             case 0:
-                addSection("hero", section);
+                addLogo(div, githubCat, "github");
+                addLogo(div, instagram, "instagram");
+                addBlock("socials", div);
                 continue;
             case 1:
-                addSection("blurbs", section);
+                addBlock("title", div);
                 continue;
             case 2:
-                addSection("question", section);
+                addBlock("type", div);
+                break;
+            case 3:
+                addBlock("links", div);
                 break;
         };
     };
