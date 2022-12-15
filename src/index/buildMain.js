@@ -27,6 +27,10 @@ const buildMain = () => {
                 addBlock("socials", div);
                 continue;
             case 1:
+                const heading = document.createElement("h1");
+                heading.id = "heading";
+                heading.textContent = "s w + r d";
+                div.appendChild(heading);
                 addBlock("title", div);
                 continue;
             case 2:
