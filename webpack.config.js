@@ -7,6 +7,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Restaurant",
       template: "template.html",
+      favicon: "../../logos/favicon/sword-fill.png"
     }),
   ],
   devtool: "inline-source-map",
