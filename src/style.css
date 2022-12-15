@@ -104,3 +104,13 @@ main {
 #github:hover, #instagram:hover {
     cursor: pointer;
 }
+
+/* -- TITLE -- */
+
+#heading {
+    font-family: "Lateef", serif;
+    font-weight: 400;
+    font-size: 140px;
+    color: var(--white);
+    margin: 0;
+}
