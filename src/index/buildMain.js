@@ -11,11 +11,18 @@ const buildMain = () => {
         logo.src = social;
         logo.id = identifier;
         elem.appendChild(logo);
-    }
+    };
 
     const addBlock = (val, elem) => {
         elem.id = val;
         main.appendChild(elem);
+    };
+
+    const addHeading = (elem, heading, identifier, text) => {
+        let tag = document.createElement(heading);
+        tag.id = identifier;
+        tag.textContent = text;
+        elem.appendChild(tag);
     };
 
     for (let i = 0; i < 4; i++) {
@@ -27,13 +34,11 @@ const buildMain = () => {
                 addBlock("socials", div);
                 continue;
             case 1:
-                const heading = document.createElement("h1");
-                heading.id = "heading";
-                heading.textContent = "s w + r d";
-                div.appendChild(heading);
+                addHeading(div, "h1", "first", "s w + r d");
                 addBlock("title", div);
                 continue;
             case 2:
+                addHeading(div, "h2", "second", "BRUTALIST RESTAURANT");
                 addBlock("type", div);
                 break;
             case 3:
