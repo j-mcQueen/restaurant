@@ -111,8 +111,8 @@ main {
 }
 
 #github, #instagram {
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
 }
 
 #github:hover, #instagram:hover {
