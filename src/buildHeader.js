@@ -34,10 +34,10 @@ const buildHeader = () => {
                 anchor.id = "home";
                 continue;
             case 1:
+                appendElems(div, "wrapper", links);
                 addListItem(anchor, "about", "about");
                 continue;
             case 2:
-                appendElems(div, "wrapper", links);
                 addListItem(anchor, "menus", "menus");
                 continue;
             case 3:
