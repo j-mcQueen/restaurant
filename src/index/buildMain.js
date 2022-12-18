@@ -1,5 +1,6 @@
 import githubCat from "../../../../logos/github/github-mark/github-mark-white.png";
 import instagram from "../../../../logos/instagram/instagram.svg";
+import { addLinks } from "../index/addLinks";
 
 const buildMain = () => {
     const content = document.getElementById("content");
@@ -43,6 +44,7 @@ const buildMain = () => {
                 break;
             case 3:
                 addBlock("links", div);
+                addLinks(div);
                 break;
         };
     };
