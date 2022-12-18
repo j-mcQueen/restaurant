@@ -6,12 +6,18 @@
 }
 
 :root {
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
     --black: #1E1E1E;
     --white: #FFFFFF;
     --green: #C8D29E;
     --red: #C58B93;
+    --blue: #4b81bd;
     background-color: var(--black);
+}
+
+::selection {
+    background-color: var(--blue);
 }
 
 /* -- HEADER -- */
@@ -33,7 +39,7 @@ a:hover {
 
 #logo {
     font-family: "Lateef", serif;
-    font-size: 16px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +75,13 @@ a:hover {
 
 #links #book:hover {
     color: var(--white);
-    background-color: var(--black);
+    background-color: var(--blue);
+}
+
+#hero-links {
+    display: flex;
+    padding: 5% 0;
+    gap: 20px;
 }
 
 ul > li {
@@ -89,11 +101,13 @@ main {
     height: 100vh;
 }
 
+/* -- SOCIALS -- */
+
 #socials {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    width: 50%;
+    gap: 50px;
 }
 
 #github, #instagram {
