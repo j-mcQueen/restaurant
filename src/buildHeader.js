@@ -44,7 +44,7 @@ const buildHeader = () => {
                 addListItem(anchor, "contact", "contact");
                 continue;
             case 4:
-                addListItem(anchor, "book", "book");
+                addListItem(anchor, "reserve", "reserve");
                 break;
         };
     };
