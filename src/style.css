@@ -73,7 +73,7 @@ a:hover {
     background-color: var(--white);
 }
 
-#links #book:hover {
+#links #reserve:hover, button:hover {
     color: var(--white);
     background-color: var(--blue);
 }
@@ -88,7 +88,7 @@ ul > li {
     list-style-type: none;
 }
 
-#book {
+#reserve, button {
     color: var(--black);
     background-color: var(--white);
 }
