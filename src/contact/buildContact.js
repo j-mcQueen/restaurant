@@ -8,5 +8,14 @@ const buildContact = () => {
     grid.id = "grid";
     main.appendChild(grid);
     content.appendChild(main);
+
+    const appendElem = (cntr, tag, text, identifier, external) => {
+        const elem = document.createElement(tag);
+        elem.textContent = text;
+        elem.id = identifier;
+        cntr.appendChild(elem);
+
+        if (external == true) grid.appendChild(cntr);
+    };
 };
 export { buildContact };
