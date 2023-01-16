@@ -27,15 +27,16 @@ nav {
     justify-content: space-evenly;
     position: fixed;
     width: 100%;
+    top: 0;
     background-color: var(--black);
 }
 
-a {
+a, button {
     color: var(--white);
     transition: 0.3s ease;
 }
 
-a:hover {
+a:hover, button:hover {
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -93,8 +94,13 @@ ul > li {
 }
 
 #reserve, button {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
     color: var(--black);
     background-color: var(--white);
+    border: 1px solid var(--white);
+    padding: 8px 20px;
+    letter-spacing: -1.75px;
 }
 
 main {
