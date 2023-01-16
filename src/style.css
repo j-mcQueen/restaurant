@@ -25,6 +25,9 @@
 nav {
     display: flex;
     justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    background-color: var(--black);
 }
 
 a {
@@ -45,6 +48,7 @@ a:hover {
     justify-content: center;
     margin: 0;
     width: 75%;
+    background-color: var(--black);
 }
 
 #logo p {
