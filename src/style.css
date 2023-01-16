@@ -137,3 +137,25 @@ main {
     letter-spacing: -2px;
     margin: 0;
 }
+
+#info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#cta {
+    margin: 5%;
+}
+
+#picture, #blurb {
+    border: 1px solid var(--white);
+    padding: 5%;
+    min-height: 300px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 2.4rem;
+}
