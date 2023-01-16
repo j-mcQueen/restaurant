@@ -103,12 +103,12 @@ ul > li {
     letter-spacing: -1.75px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#grid {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 0.4fr 0.6fr 0.75fr;
     height: 100vh;
+    margin-top: 10%;
 }
 
 /* -- SOCIALS -- */
@@ -137,6 +137,7 @@ main {
     font-size: 140px;
     color: var(--white);
     margin: 0;
+    padding: 0;
 }
 
 #second {
@@ -152,18 +153,13 @@ main {
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-bottom: 10%;
-}
-
-#cta {
-    margin: 5%;
 }
 
 #picture, #blurb {
     border: 1px solid var(--white);
-    padding: 5%;
-    min-height: 400px;
-    min-width: 300px;
+    /* padding: 5%; */
+    min-height: 500px;
+    min-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
