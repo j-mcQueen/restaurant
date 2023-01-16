@@ -151,7 +151,7 @@ main {
 #picture, #blurb {
     border: 1px solid var(--white);
     padding: 5%;
-    min-height: 300px;
+    min-height: 400px;
     min-width: 300px;
     display: flex;
     justify-content: center;
