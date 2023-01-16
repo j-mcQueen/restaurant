@@ -157,7 +157,6 @@ ul > li {
 
 #picture, #blurb {
     border: 1px solid var(--white);
-    /* padding: 5%; */
     min-height: 500px;
     min-width: 400px;
     display: flex;
