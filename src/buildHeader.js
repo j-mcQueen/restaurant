@@ -1,57 +1,39 @@
 const buildHeader = () => {
-    // -- build uniques
     const content = document.getElementById("content");
-    const header = document.createElement("header");
-    const nav = document.createElement("nav");
-    const para = document.createElement("p");
-    const links = document.createElement("ul");
-    links.id = "links";
+    content.innerHTML = `
+                        <header>
+                            <nav>
+                                <div id="logo"></div>
+                                <div id="wrapper"></div>
+                            </nav>
+                        </header>
+                        `;
+    const logo = document.getElementById("logo");
+    logo.innerHTML = `
+                    <a id = "home">
+                        <p>s w + r d</p>
+                    </a>
+                    `;
+    const wrapper = document.getElementById("wrapper");
+    wrapper.innerHTML = `
+                        <ul>
+                            <li>
+                                <a id="about">about</a>
+                            </li>
 
-    header.appendChild(nav);
-    content.appendChild(header);
+                            <li>
+                                <a id="menus">menus</a>
+                            </li>
 
-    const appendElems = (d, val, elem) => {
-        nav.appendChild(d);
-        d.id = val;
-        d.appendChild(elem);
-    };
+                            <li>
+                                <a id="contact">contact</a>
+                            </li>
 
-    const addListItem = (a, val, text) => {
-        let listItem = document.createElement("li");
-        links.appendChild(listItem);
-        a.id = val;
-        a.textContent = text;
-        listItem.appendChild(a);
-    };
-    // create divs + anchors + list items
-    for (let i = 0; i < 5; i++) {
-        let div = document.createElement("div");
-        let anchor = document.createElement("a");
-
-        switch (i) {
-            case 0:
-                appendElems(div, "logo", anchor);
-                anchor.id = "home";
-                continue;
-            case 1:
-                appendElems(div, "wrapper", links);
-                addListItem(anchor, "about", "about");
-                continue;
-            case 2:
-                addListItem(anchor, "menus", "menus");
-                continue;
-            case 3:
-                addListItem(anchor, "contact", "contact");
-                continue;
-            case 4:
-                addListItem(anchor, "reserve", "reserve");
-                break;
-        };
-    };
-
-    let home = document.getElementById("home");
-    para.textContent = "s w + r d";
-    home.appendChild(para);
+                            <li>
+                                <a id="reserve">reserve</a>
+                            </li>
+                        </ul>
+                        `;
 };
 
-export { buildHeader, };
+export { buildHeader };
