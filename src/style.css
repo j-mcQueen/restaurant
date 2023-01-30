@@ -139,7 +139,7 @@ main {
 
 /* -- TITLE -- */
 
-.first {
+#first {
     font-family: "Lateef", serif;
     font-weight: 400;
     font-size: 140px;
@@ -148,7 +148,7 @@ main {
     padding: 0;
 }
 
-.second {
+#second {
     font-family: "Inter", sans-serif;
     font-weight: 200;
     font-size:  22px;
@@ -163,7 +163,7 @@ main {
     gap: 50px;
 }
 
-.picture, .blurb {
+#picture, #blurb {
     border: 1px solid var(--white);
     min-height: 500px;
     min-width: 400px;
@@ -174,7 +174,7 @@ main {
     font-size: 2.4rem;
 }
 
-.reserve-cta:hover {
+#reserve:hover {
     background-color: var(--blue);
     color: var(--white);
 }
@@ -185,8 +185,4 @@ main {
 
 h2 {
     text-align: center;
-}
-
-.address address {
-   white-space: pre-wrap;
 }
